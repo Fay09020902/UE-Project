@@ -1,0 +1,37 @@
+div.first {
+    animation: slide-out 500ms ease;
+}
+
+div.second {
+    animation: slide-in 500ms ease;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0%;
+        transform: translateX(25vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        opacity: 0%;
+        transform: translateX(-25vw);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.SignupForm__submit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.LoginModal .SignupForm__next {
+    display: flex;
+    justify-content: flex-end;
+}

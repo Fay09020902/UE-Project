@@ -1,0 +1,97 @@
+.index {
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-categories {
+    padding: 10px;
+}
+.category-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.filtered_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.category-card {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.category-card h3 {
+  text-align: center;
+}
+
+.filter {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.filtered_items button {
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333333;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.filtered_items button.selected {
+  background-color: darkgray;
+  color: #fff;
+}
+
+.filtered_items button:hover {
+  background-color: grey;
+  border-color: grey;
+  color: #ffffff;
+}
+
+.filtered_lists {
+  margin-top: 60px;
+  margin-left: 140px;
+  margin-right: 140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.slide_item {
+  width: 100%;
+  margin: 10px;
+}
+
+@media (min-width: 480px) {
+  .slide_item {
+    width: 50%; /* Two columns on screens wider than 480px */
+  }
+}
+
+@media (min-width: 768px) {
+  .slide_item {
+    width: 33.33%; /* Three columns on screens wider than 768px */
+  }
+}
+
+@media (min-width: 1000px) {
+  .slide_item {
+    width: 23%; /* Four columns on screens wider than 1200px */
+  }
+}

@@ -1,0 +1,115 @@
+.ShoppingCart {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.ShoppingCart > div {
+	margin: 30px;
+}
+
+.ShoppingCart__total_container {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.ShoppingCart__checkout {
+	display: flex;
+	justify-content: center;
+	margin: 30px;
+	font-size: 30px;
+	background-color: rgb(25, 25, 25);
+	color: var(--white);
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+	transition: box-shadow 300ms ease;
+}
+
+.ShoppingCart__checkout:hover {
+	box-shadow: 0 0 30px var(--grey);
+}
+
+.ShoppingCart__total {
+	background-color: var(--white);
+	border-radius: 25px;
+	padding: 30px;
+}
+
+.ShoppingCart__restaurant {
+	margin: 30px;
+	font-size: 30px;
+    padding: 10px;
+}
+
+.ShoppingCart__details {
+	background-color: var(--white);
+	border-radius: 25px;
+	padding: 30px;
+}
+
+.ShoppingCart__total div {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ShoppingCart__details div {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ShoppingCart__details section {
+    margin: 50px 0;
+}
+
+
+.CartUpdate {
+	background-color: var(--main-bg-color);
+	padding: 5px;
+	width: 100px;
+	border-radius: 20px;
+}
+
+.CartUpdate span {
+	background-color: var(--white);
+	box-sizing: content-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: box-shadow 100ms ease-in-out;
+}
+
+.CartUpdate span:active {
+	box-shadow: inset var(--grey) 0 0 15px;
+	user-select: none;
+}
+
+.ShoppingCart__delete {
+	font-weight: bold;
+	color: var(--accent);
+	cursor: pointer;
+}
+
+.ShoppingCart__tips {
+	background-color: var(--main-bg-color);
+	padding: 5px;
+	border-radius: 20px;
+}
+
+.ShoppingCart__tips span {
+	display: flex;
+	justify-content: center;
+	border-radius: 25px;
+	padding: 5px;
+	cursor: pointer;
+	min-width: 15%;
+	transition: all 500ms ease;
+}
